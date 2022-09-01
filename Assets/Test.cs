@@ -27,7 +27,7 @@ public class Test : MonoBehaviour
             for(int j = 0; j < 7; ++j)
 			{
                 GameObject go = new GameObject();
-                go.name = "Lotto Number" + (j + 1);
+                go.name = "Lotto Number " + (j + 1);
                 go.transform.parent = GameObject.Find((i + 1).ToString()).transform;
 
                 go.AddComponent<Text>();
@@ -36,7 +36,6 @@ public class Test : MonoBehaviour
                 t.fontSize = 500;
                 t.rectTransform.sizeDelta = new Vector2(300.0f, 570.0f);
                 t.text = lines[j].ToString();
-            
 			}
         }
     }
